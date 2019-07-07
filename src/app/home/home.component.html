@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="header">CALCULATOR</div>
+
+		<div>
+			<div><!-- d-flex makes i/p side by side - Bootrap4 -->
+				<input [(ngModel)]='num1' type="number" name="num1" class="input-text"> 
+				<input [(ngModel)]='num2' type="number" name="num2" class="input-text">
+			</div>
+		</div>
+		<div class="">
+			<br>
+			<button class="button" (click) = 'sum()'> Add </button>
+			<button class="button" (click) = 'diff()'> Subtract </button>
+			<button class="button" (click) = 'mult()'> Multiply </button>
+            <button class="button" (click) = 'div()'> Divide </button>
+            <button class="button" (click) = 'clear()'> Clear </button>
+			<br><br><br>
+		</div>
+		<div class="footer">
+			<h6>{{resultheading}}</h6>
+			<h4>You result: {{result}}</h4>
+		</div>
+</div>
